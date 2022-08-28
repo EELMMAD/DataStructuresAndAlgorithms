@@ -6,4 +6,12 @@ public class BigO {
     // value or infinity
 
     //We use big O to describe the performance of an algorithm
+
+    //Constant O
+    //LOGARITHMIC O(log n)
+    //LINEAR O(n)
+    //QUADRATIC(O^2)
+    //EXPONENTIAL O(2^n)
+
+    //Exponential grows is opposite of logarithmic
 }
