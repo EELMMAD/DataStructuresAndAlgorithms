@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation;
+package se.codewithMosh.elmira.theBigONotation.theBogONotation;
 
 public class On { //O(n)       n --> size of input
     //as n grows the cost of this algorithms grow linearly

@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation;
+package se.codewithMosh.elmira.theBigONotation.theBogONotation;
 
 public class OnToPowerOfTwo { //O(n ^2)   O(n * n)
     //nested loop

@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation;
+package se.codewithMosh.elmira.theBigONotation.theBogONotation;
 
 public class BigO {
     //The Big O notation is a mathematical notation that describe the limiting

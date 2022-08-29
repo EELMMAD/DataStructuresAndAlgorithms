@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation;
+package se.codewithMosh.elmira.theBigONotation.theBogONotation;
 
 public class SpaceComplexity {
 
