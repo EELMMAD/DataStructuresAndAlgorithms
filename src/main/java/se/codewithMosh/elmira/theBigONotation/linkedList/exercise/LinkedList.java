@@ -62,8 +62,39 @@ public class LinkedList {
         first = second;
     }
 
-
     //deleteLast
+    public void removeLast() {
+        //[10 -> 20 -> 30]
+        // last -> 30
+        //previous -> 20
+        //last -> 20
+        //[10 -> 20]
+
+        if (isEmpty())
+            throw new NoSuchElementException();
+
+        //we have only one node
+        if (first == last) {
+            first = last = null;
+            return;
+        }
+
+
+        // At least we have two nodes
+        var previous = getPrevious(last);
+        last = previous;
+        last.next = null;
+    }
+
+    private Node getPrevious(Node node) {
+        var current = first;
+        while (current != null) {
+            if (current.next == node) return current;
+            current = current.next;
+        }
+        return null;
+    }
+
 
     //contains
     public boolean contains(int item) {
