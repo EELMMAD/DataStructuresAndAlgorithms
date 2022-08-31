@@ -16,7 +16,7 @@ public class LinkedList {
 
     //addFirst
     public void addFirst(int item){
-        Node node = new Node(item);
+        var node = new Node(item);
 
         if(isEmpty())
             first = last = node;
@@ -28,7 +28,7 @@ public class LinkedList {
 
     //addLast
     public void addLast(int item){
-        Node node = new Node(item);
+        var node = new Node(item);
 
         if(isEmpty())
            first = last = node;
@@ -42,6 +42,7 @@ public class LinkedList {
     //deleteLast
     //contains
     //indexOf
+
 
 
 
