@@ -1,5 +1,7 @@
 package se.codewithMosh.elmira.theBigONotation.linkedList.exercise;
 
+import java.util.NoSuchElementException;
+
 public class LinkedList {
     private class Node {
         private int value;
@@ -15,10 +17,10 @@ public class LinkedList {
 
 
     //addFirst
-    public void addFirst(int item){
+    public void addFirst(int item) {
         var node = new Node(item);
 
-        if(isEmpty())
+        if (isEmpty())
             first = last = node;
         else {
             node.next = first;
@@ -27,11 +29,11 @@ public class LinkedList {
     }
 
     //addLast
-    public void addLast(int item){
+    public void addLast(int item) {
         var node = new Node(item);
 
-        if(isEmpty())
-           first = last = node;
+        if (isEmpty())
+            first = last = node;
         else {
             last.next = node;
             last = node;
@@ -39,27 +41,49 @@ public class LinkedList {
     }
 
     //deleteFirst
+    public void removeFirst() {
+        //[10 -> 20 -> 30]
+        //first -> 20
+        //[20 -> 30]
+        //we need two different references
+
+        if (isEmpty())
+            throw new NoSuchElementException();
+
+        //for the list that have only one item
+        if (first == last) {
+            first = last = null;
+            return;      //we do not want to execute the rest of code
+        }
+
+        //for the list that have at least two items
+        var second = first.next;  // we have the second variable as backup here
+        first.next = null;  // remove the link (->) between 10 -> 20   [10  20 -> 30]
+        first = second;
+    }
+
+
     //deleteLast
 
     //contains
-   public boolean contains(int item){
+    public boolean contains(int item) {
         return indexOf(item) != -1;  //if the expression evaluate to true that means we have this item in our list
-   }
+    }
 
     //indexOf
-    public int indexOf(int item){
+    public int indexOf(int item) {
         int index = 0;
         var current = first;
 
-        while (current != null){
-            if(current.value == item) return index;
+        while (current != null) {
+            if (current.value == item) return index;
             current = current.next;
             index++;
         }
         return -1;
     }
 
-    private boolean isEmpty(){
+    private boolean isEmpty() {
         return first == null;
     }
 }
