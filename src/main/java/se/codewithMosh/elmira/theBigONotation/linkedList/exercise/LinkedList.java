@@ -40,7 +40,12 @@ public class LinkedList {
 
     //deleteFirst
     //deleteLast
+
     //contains
+   public boolean contains(int item){
+        return indexOf(item) != -1;  //if the expression evaluate to true that means we have this item in our list
+   }
+
     //indexOf
     public int indexOf(int item){
         int index = 0;
@@ -53,8 +58,6 @@ public class LinkedList {
         }
         return -1;
     }
-
-
 
     private boolean isEmpty(){
         return first == null;
