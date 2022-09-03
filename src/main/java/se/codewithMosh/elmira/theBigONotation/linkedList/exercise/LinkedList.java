@@ -14,6 +14,7 @@ public class LinkedList {
 
     private Node first; //head
     private Node last; //tail
+    private int size;
 
 
     //addFirst
@@ -26,6 +27,7 @@ public class LinkedList {
             node.next = first;
             first = node;
         }
+        size++;
     }
 
     //addLast
@@ -38,6 +40,7 @@ public class LinkedList {
             last.next = node;
             last = node;
         }
+        size++;
     }
 
     //deleteFirst
@@ -60,6 +63,8 @@ public class LinkedList {
         var second = first.next;  // we have the second variable as backup here
         first.next = null;  // remove the link (->) between 10 -> 20   [10  20 -> 30]
         first = second;
+
+        size--;
     }
 
     //deleteLast
@@ -74,16 +79,16 @@ public class LinkedList {
             throw new NoSuchElementException();
 
         //we have only one node
-        if (first == last) {
+        if (first == last)
             first = last = null;
-            return;
-        }
-
-
+        else{
         // At least we have two nodes
         var previous = getPrevious(last);
         last = previous;
         last.next = null;
+
+        }
+        size--;
     }
 
     private Node getPrevious(Node node) {
@@ -93,6 +98,12 @@ public class LinkedList {
             current = current.next;
         }
         return null;
+    }
+
+    //implementing the size
+    //O(n)
+    public int size(){
+        return size;
     }
 
 
