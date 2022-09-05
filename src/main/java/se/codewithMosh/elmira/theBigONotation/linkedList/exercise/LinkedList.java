@@ -86,7 +86,6 @@ public class LinkedList {
         var previous = getPrevious(last);
         last = previous;
         last.next = null;
-
         }
         size--;
     }
@@ -106,6 +105,18 @@ public class LinkedList {
         return size;
     }
 
+
+    //converting link list to array
+    public int[] toArray(){
+        int[] array = new int[size];
+        var current = first;
+        var index = 0;
+        while (current != null){
+            array[index++] = current.value;
+            current = current.next;
+        }
+        return array;
+    }
 
     //contains
     public boolean contains(int item) {
