@@ -1,5 +1,7 @@
 package se.codewithMosh.elmira.theBigONotation.linkedList.exercise;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         /*
@@ -18,9 +20,17 @@ public class Main {
         list.addLast(30);
         System.out.println("third size: " + list.size());
 
+        var array = list.toArray();
+        System.out.println("List: " + Arrays.toString(array));
+        
+        var array2 = list.toArray();
+        System.out.println("To array: " + Arrays.toString(array2));
+
         list.removeLast();
         list.removeFirst();
         System.out.println("forth size: " + list.size());
+
+
 
 
 
@@ -36,7 +46,7 @@ public class Main {
         //test removeFirst
         list.removeFirst();
 
-        //test removeFirst
-        list.removeLast();
+        //test removeLast
+       // list.removeLast();
     }
 }
