@@ -118,6 +118,37 @@ public class LinkedList {
         return array;
     }
 
+    //reverse()
+    public void reverse(){
+        //f            l
+        //[10 -> 20 -> 30]
+        //[10 <- 20 -> 30]
+        //[10 <- 20  30]
+        //[10 <- 20 <- 30]      previous p      current c     next n
+        // p      c     n
+        // n = c.next
+        //c.next = p
+        //[10 <- 20  30]
+
+        //[10 <- 20   30]      previous p      current c     next n
+        //        p      c     n
+        //[10 <- 20 <- 30]
+        //              p      c     n
+
+        if(isEmpty()) return;
+        var previous = first;
+        var current = first.next;
+        while(current != null){
+          var next = current.next;
+          current.next = previous;
+          current = next;
+          previous = current;
+        }
+        last = first;
+        last.next = null;
+        first = previous;
+    }
+
     //contains
     public boolean contains(int item) {
         return indexOf(item) != -1;  //if the expression evaluate to true that means we have this item in our list
