@@ -167,7 +167,44 @@ public class LinkedList {
         return -1;
     }
 
+
+
+    //getKthFromTheEnd(k)
+
+    //Find the Kth node from the end
+    //of a linked list in one pass.
+
+    //[10 -> 20 -> 30 -> 40 -> 50]
+    //              *           *
+    //K = 1 (50)
+    //K = 2 (40)
+    //K = 3 (30)   (distance = 2)
+
+   public int getKthFromTheEnd(int k) throws IllegalAccessException {
+        if(isEmpty())
+            throw new IllegalStateException();
+      var a = first;
+      var b = first;
+      for(int i = 0; i < k - 1; i++) {
+          b = b.next;
+          if(b == null)
+              throw new IllegalAccessException();
+      }
+          while(b != last){
+              a = a.next;
+              b = b.next;
+          }
+      return a.value;
+   }
+
+
+
+
+
+
+
     private boolean isEmpty() {
         return first == null;
     }
+
 }
