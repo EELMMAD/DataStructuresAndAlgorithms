@@ -2,6 +2,8 @@ package se.codewithMosh.elmira.theBigONotation.stacks;
 
 public class Introduction {
     /*
+
+    *****Stacks can go back wards*****
                       STACKS
             * implement the undo feature
             * Build compilers(eg syntax checking)
