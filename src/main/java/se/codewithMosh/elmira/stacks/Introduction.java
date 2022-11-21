@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks;
+package se.codewithMosh.elmira.stacks;
 
 public class Introduction {
     /*

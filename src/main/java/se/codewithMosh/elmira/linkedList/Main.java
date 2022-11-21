@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.linkedList;
+package se.codewithMosh.elmira.linkedList;
 
 import java.util.LinkedList;
 

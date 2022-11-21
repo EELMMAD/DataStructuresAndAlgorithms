@@ -1,6 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.arrays.arraysExersize;
-
-import se.codewithMosh.elmira.theBigONotation.arrays.exercise.Array;
+package se.codewithMosh.elmira.arrays.arraysExersize;
 
 public class Main {
     public static void main(String[] args) {

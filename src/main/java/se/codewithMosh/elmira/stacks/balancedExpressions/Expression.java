@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks.balancedExpressions;
+package se.codewithMosh.elmira.stacks.balancedExpressions;
 
 import java.util.Arrays;
 import java.util.List;

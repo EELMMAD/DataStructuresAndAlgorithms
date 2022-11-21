@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.arrays;
+package se.codewithMosh.elmira.arrays;
 
 import java.util.Arrays;
 

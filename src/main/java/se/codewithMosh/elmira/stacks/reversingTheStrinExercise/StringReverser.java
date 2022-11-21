@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks.reversingTheStrinExercise;
+package se.codewithMosh.elmira.stacks.reversingTheStrinExercise;
 
 import java.util.Stack;
 

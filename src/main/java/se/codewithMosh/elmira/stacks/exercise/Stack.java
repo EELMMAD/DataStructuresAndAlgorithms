@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks.exercise;
+package se.codewithMosh.elmira.stacks.exercise;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.linkedList.exercise;
+package se.codewithMosh.elmira.linkedList.exercise;
 
 import java.util.Arrays;
 

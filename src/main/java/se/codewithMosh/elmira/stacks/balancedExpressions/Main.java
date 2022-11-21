@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks.balancedExpressions;
+package se.codewithMosh.elmira.stacks.balancedExpressions;
 
 public class Main {
     public static void main(String[] args) {

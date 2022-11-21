@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.arrays.exercise;
+package se.codewithMosh.elmira.arrays.exercise;
 
 public class Array {
    private int[] items;

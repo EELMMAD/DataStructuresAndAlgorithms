@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.arrays.dynamicArray;
+package se.codewithMosh.elmira.arrays.dynamicArray;
 
 import java.util.ArrayList;
 

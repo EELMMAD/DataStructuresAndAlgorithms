@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.theBigONotation.stacks.exercise;
+package se.codewithMosh.elmira.stacks.exercise;
 
 public class Main {
     public static void main(String[] args) {
