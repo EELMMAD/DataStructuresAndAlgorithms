@@ -1,4 +1,4 @@
-package se.codewithMosh.elmira.queuse.priorityQueues.exercises;
+package se.codewithMosh.elmira.queuse.exercises;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
