@@ -23,7 +23,7 @@ public class QuadraticProbing {
    (hash(key) + i)^2 % table_size
 
 
-   we have big jumps is quadratic probing
+   we have big jumps is quadratic probing, Infinite loop
 
      */
 }
