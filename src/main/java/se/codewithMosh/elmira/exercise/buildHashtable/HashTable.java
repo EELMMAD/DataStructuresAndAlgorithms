@@ -38,6 +38,17 @@ public class HashTable {
         }
     }
 
+    public String get(int key){
+        var index = hash(key);
+        var bucket = entries[index];
+        if(bucket != null) {
+            for (var entry : bucket)
+                if (entry.key == key)
+                    return entry.value;
+        }
+        return null;
+    }
+
     //where is entries we should store the key value pair
     private int hash(int key) {
         return key % entries.length;
