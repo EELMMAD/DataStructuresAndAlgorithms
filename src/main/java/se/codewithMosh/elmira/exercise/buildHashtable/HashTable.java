@@ -35,6 +35,8 @@ public class HashTable {
         for (var entry : bucket) {
             if (entry.key == key) {
                 entry.value = value;
+                //here we want to return because we do not want to add a new
+                // entry at the end of this bucket
                 return;
             }
         }
@@ -74,8 +76,7 @@ public class HashTable {
             for (var entry : bucket) {
                 if (entry.key == key) {
                     entry.value = value;
-                    //here we want to return because we do not want to add a new
-                    // entry at the end of this bucket
+
                     return;
                 }
             }
