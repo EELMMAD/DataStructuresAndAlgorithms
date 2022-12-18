@@ -1,5 +1,6 @@
 package se.codewithMosh.elmira.exercise.buildHashtable;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class HashTable {
@@ -20,7 +21,6 @@ public class HashTable {
         if (entries[index] == null)                        //  entries[index] ---> array cell
             entries[index] = new LinkedList<>();
 
-
         // if it is not null it means we have at least one entry in this link list
         //So we should add a new key value pair or a new entry at the end of this list
         //First we should wrap this key value pair en an entry object
@@ -30,7 +30,6 @@ public class HashTable {
         // at the end of this link, first we should iterate over this linked list,
         //look at every entry, if you find an entry with the same key, you want to
         // update its value, Otherwise we want to append this entry at the end of our list
-
         var bucket = entries[index];
         for (var entry : bucket) {
             if (entry.key == key) {
@@ -40,24 +39,26 @@ public class HashTable {
                 return;
             }
         }
-
         //here means we can not find the entry with the same key
         bucket.addLast(new Entry(key, value));
     }
 
-    private int hash(int key) {
-        return key % entries.length;
+    public String get(int key){
+     var index = hash(key);
+     var bucket = entries[index];
+     if(bucket != null) {
+         for (var entry : bucket)
+             if (entry.key == key) {
+                 return entry.value;
+             }
+     }
+     return null;
     }
 
-
-
-
-
-
-
-
-
-
+    private int hash(int key) {      //In which index we should put key value pair
+        return key % entries.length;
+    }
+}
 
 
 
@@ -135,4 +136,4 @@ public class HashTable {
     }
 
      */
-}
+
